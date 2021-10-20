@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  <style>
+    table,
+    th,
+    td {
+     padding: 20px;
+     border: 1px solid black;
+     border-collapse: collapse;
+     text-align: center;
+     word-wrap: break-word;
+     font-size: 20px
+
+    }
+    label{
+
+      font-size: 20px
+
+
+
+    }
+
+      .button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+
+
+      }
+
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+      }
+
+
+  </style>
+
+  <body>
+    <button style="margin-top:10px ; margin-bottom:10px" class="button" onclick="window.location.href='/'" >Back</button>
+
+    <div style="margin:0 auto; height: auto;width:auto;border: 3px solid green;">
+
+      <h1 style="margin-left:5%">Take your survey</h1>
+      <h2 style="margin-left:5%">Personal Details :</h2>
+
+      <form method="POST" style="margin-left:5%;">
+
+        <div style="margin-left:50px;">
+          <label for="surname">Surname </label>
+          <input
+          style="margin-left:60px"
+          type="text"
+          id="surname"
+          name="surname"
+          /><br><br>
+
+          <label for="firstname">First Name </label>
+          <input
+          style="margin-left: 41px"
+          type="text"
+          id="firstname"
+          name="firstname"
+          /><br><br>
+
+          <label for="contactNo">Contact number </label>
+          <input
+          style="margin-left: 3px"
+          type="text"
+          id="contactNo"
+          name="contactNo"
+          /><br><br>
+          <label for="date">Date  </label>
+          <input
+          style="margin-left: 94px"
+          type="date"
+          id="date"
+          name="date"
+          /><br><br>
+          <label for="age">Age  </label>
+          <input
+          style="margin-left: 96px"
+          type="number"
+          id="age"
+          name="age"
+          /><br><br>
+
+        </div>
+
+        <h2>What is your favourite food? (You can choose more than 1 answer).</h2>
+        <input
+
+        type="checkbox"
+        id="pizza"
+        name="check"
+        value="pizza"
+        />
+        <label for="pizza">Pizza</label><br><br>
+        <input
+
+        type="checkbox"
+        id="pasta"
+        name="check"
+        value="pasta"
+        />
+        <label for="pasta">Pasta</label><br><br>
+        <input
+
+        type="checkbox"
+        id="pap_wors"
+        name="check"
+        value="pap_wors"
+        />
+        <label for="pap_wors">Pap and Wors</label><br><br>
+
+        <input
+
+        type="checkbox"
+        id="chicken_stir_fry"
+        name="check"
+        value="chicken_stir_fry"
+        />
+        <label for="chicken_stir_fry">Chicken stir fry</label><br><br>
+        <input
+
+        type="checkbox"
+        id="beef_stir_fry"
+        name="check"
+        value="beef_stir_fry"
+        />
+        <label for="beef_stir_fry">Beef stir fry</label><br><br>
+        <input
+
+        type="checkbox"
+        id="other"
+        name="check"
+        value="other"
+        />
+        <label for="other">Other</label><br><br>
+
+
+        <h2>On a scale of 1 to 5 indicate whether you strongly agree to strobly disagree.</h2>
+        <table style="width:80%;">
+          <tr bgcolor = "#4CAF50">
+            <th></th>
+            <th>Strongly Agree (1) </th>
+            <th>Agree (2)</th>
+            <th>Neutral (3)</th>
+            <th>Disagree (4)</th>
+            <th>Strongly Disagree (5)</th>
+
+          </tr>
+          <tr>
+            <td>I like to eat out</td>
+            <td><input type="radio"id="r2c2" name="out" value="1" ></td>
+            <td><input type="radio"id="r2c3" name="out" value="2"></td>
+            <td><input type="radio"id="r2c4" name="out" value="3" ></td>
+            <td><input type="radio"id="r2c5" name="out" value="4"></td>
+            <td><input type="radio"id="r2c6" name="out" value="5"></td>
+          </tr>
+
+          <tr>
+            <td>I like to watch movies</td>
+            <td><input type="radio"id="r3c2" name="movies" value="1"></td>
+            <td><input type="radio"id="r3c3" name="movies" value="2"></td>
+            <td><input type="radio"id="r3c4" name="movies" value="3"></td>
+            <td><input type="radio"id="r3c5" name="movies" value="4"></td>
+            <td><input type="radio"id="r3c6" name="movies" value="5"></td>
+
+          </tr>
+
+          <tr>
+            <td>I like to watch TV</td>
+            <td><input type="radio"id="r4c2" name="tv" value="1"></td>
+            <td><input type="radio"id="r4c3" name="tv" value="2"></td>
+            <td><input type="radio"id="r4c4" name="tv" value="3"></td>
+            <td><input type="radio"id="r4c5" name="tv" value="4"></td>
+            <td><input type="radio"id="r4c6" name="tv" value="5"></td>
+
+          </tr>
+
+          <tr>
+            <td>I like to listen to the radio</td>
+            <td><input type="radio"id="r5c2" name="radio" value="1"></td>
+            <td><input type="radio"id="r5c3" name="radio" value="2"></td>
+            <td><input type="radio"id="r5c4" name="radio" value="3"></td>
+            <td><input type="radio"id="r5c5" name="radio" value="4"></td>
+            <td><input type="radio"id="r5c6" name="radio" value="5"></td>
+
+          </tr>
+        </table><br><br>
+        <div style=" margin:10px; margin-left:40%" >
+          <input style="padding: 10px 20px;background-color: #4CAF50;outline: none;
+          color: #fff;border: none; border-radius: 15px;font-size: 14px;
+
+          " type="submit" />
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

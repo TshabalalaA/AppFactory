@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+
+      .button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+
+
+      }
+
+      .button:hover {background-color: #3e8e41}
+
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 2px #666;
+        transform: translateY(4px);
+      }
+      p{
+
+        font-size: 20px
+
+      }
+
+
+  </style>
+
+  </head>
+  <body>
+    <div style="margin:0 auto; height: auto;; border: 3px solid green;">
+      <h1 style="margin-left:100px">Survey Results</h1>
+
+      <div style="margin-left:5%">
+
+        <p style="display:inline">Total number of survey: <p style="display:inline; margin-left:300px">{{no}}</p></p>
+        <p style="display:inline">Average age: <p style="display:inline; margin-left:375px">{{aveAge}}</p></p>
+        <p style="display:inline">Maximum age: <p style="display:inline; margin-left:365px">{{agemax}}</p></p>
+        <p style="display:inline">Minimum age: <p style="display:inline; margin-left:367px">{{agemin}}</p></p>
+        <br>
+        <p style="display:inline">Percentage of people who like Pizza: <p style="display:inline; margin-left:183px">{{like_pizza}}</p></p>
+        <p style="display:inline">Percentage of people who like Pasta: <p style="display:inline; margin-left:183px">{{like_pasta}}</p></p>
+        <p style="display:inline">Percentage of people who like Pap and Wors: <p style="display:inline; margin-left:115px">{{like_pap}}</p></p>
+        <br>
+        <p style="display:inline">People like to eat out: <p style="display:inline; margin-left:304px">{{like_out}}</p></p>
+        <p style="display:inline">People like to eat movies: <p style="display:inline; margin-left:272px">{{like_movies}}</p></p>
+        <p style="display:inline">People like to eat TV: <p style="display:inline; margin-left:305px">{{like_tv}}</p></p>
+        <p style="display:inline">People like to eat radio: <p style="display:inline; margin-left:289px">{{like_radio}}</p></p>
+
+
+      </div>
+
+      <button style="margin-top:10px; margin-bottom:10px; margin-left:40%" class="button" onclick="window.location.href='/'" >OK</button>
+
+
+    </div>
+
+
+  </body>
+</html>
